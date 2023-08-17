@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'K2D';
+}
+
+body {
+    width: 600px;
+    margin: auto;
+
+    .back {
+        border-radius: 50px;
+        border: 10px solid #828282;
+        background: #222;
+        width: 600px;
+        height: 700px;
+        margin: auto;
+
+        .time {
+            color: #FFF;
+            font: 400 30px 'K2D';
+            margin: 56px 0 0 442px;
+        }
+
+        .img {
+            background-image: url(./group.svg);
+            background-size: contain;
+            background-size: contain;
+            width: 450px;
+            height: 450px;
+            margin: 5px 0 0 65px;
+        }
+
+        .date {
+            color: #FFF;
+            font: 400 20px 'K2D';
+            margin: 16px 0 0 228px;
+        }
+
+        .cherta {
+            width: 230px;
+            height: 10px;
+            border-radius: 1px;
+            background: #FFF;
+            margin: 12px auto;
+        }
+    }
+}
