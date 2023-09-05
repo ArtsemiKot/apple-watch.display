@@ -1,17 +1,21 @@
-const time = document.querySelector('.back .time');
+class AppleWatch {
+    constructor() {
+        setInterval(this.doTime, 0, this.time);
+        setInterval(this.doDate, 0, this.date);
+    }
+    time = document.querySelector('.back .time');
 
-function doTime(time) {
-    const t = new Date();
-    time.innerHTML = t.getHours() + ':' + t.getMinutes() + ':' + t.getSeconds();
+    doTime(time) {
+        const t = new Date();
+        time.innerHTML = t.getHours() + ':' + t.getMinutes() + ':' + t.getSeconds();
+    }
+
+    date = document.querySelector('.back .date');
+
+    doDate(date) {
+        const d = new Date();
+        date.innerHTML = d.toDateString();
+    }
 }
 
-setInterval(doTime, 0, time);
-
-const date = document.querySelector('.back .date');
-
-function doDate(date) {
-    const d = new Date();
-    date.innerHTML = d.toDateString();
-}
-
-setInterval(doDate, 0, date);
+const appleWatch = new AppleWatch();
